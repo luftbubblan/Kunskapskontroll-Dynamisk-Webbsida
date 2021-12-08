@@ -22,13 +22,14 @@ header {
 #logo-link {
     grid-area: logo;
     height: 100px;
-    width: 100%;
+    /* width: 100%; */
     justify-self: center;
 }
 
 #logo-pic {
     height: 100%;
-    width: 100%;
+    /* width: 100%; */
+    margin: 0 auto;
 }
 
 #left-fill {
@@ -47,10 +48,9 @@ header {
 }
 
 nav {
-    background-color: rgb(87, 18, 14);
+    background-color: lightgray;
     grid-area: nav;
     display: flex;
-    border: 1px solid #333;
     height: 60px;
     width: 100%;
     justify-content: center;
@@ -58,16 +58,29 @@ nav {
 }
 
 button {
-    background-color: rgb(87, 18, 14);
-    color: white;
-    height: 60px;
-    width: 200px;
     border: none;
     cursor: pointer;
 }
 
-#nav-btn:hover {
+.nav-btn {
+    background-color: lightgray;
+    font-size: large;
+    color: rgb(87, 18, 14);
+    height: 60px;
+    width: 200px;
+}
+
+.nav-btn:hover {
     opacity: 50%;
+}
+
+.dropdown-btn {
+    background-color: lightgray;
+    font-size: large;
+    color: rgb(87, 18, 14);
+    height: 40px;
+    width: 170px;
+    padding-left: 15px;
 }
 
 #dropdown {
@@ -79,37 +92,47 @@ button {
     display: none;
     position: absolute;
     z-index: 1;
+    width: 170px;
+    left: 15px;
 }
 
 #dropdown:hover #dropdown-content {
     display: block;
-    background-color: rgb(87, 18, 14);
+    background-color: lightgray;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    box-shadow: 10px 10px 5px grey;
 }
 
-#dropdown-btn:last-child{
+.dropdown-btn:first-child{
+    border-top: 1px solid #333;
+}
+
+.dropdown-btn:last-child{
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-}
-
-#dropdown-btn:hover{
-    opacity: 50%;
-}
-
-.black {
-    background-color: black;
-    height: 500px;
-    width: 500px;
-}
-
-.cart {
-    border: 1px solid gray;
     height: 50px;
-    width: 50px;
+}
+
+.dropdown-btn:hover{
+    opacity: 50%;
 }
 
 #shopping-bag {
     content: url('https://api.iconify.design/ant-design/shopping-outlined.svg?height=50');
     grid-area: 2 / 4 / 3 / 5;
+    width: 40px;
+}
+
+#shopping-bag:hover {
+    cursor: pointer;
+}
+
+a {
+    color: rgb(87, 18, 14);
+    text-decoration: none;
+}
+
+a:active {
+    color: red;
 }
