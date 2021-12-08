@@ -11,7 +11,7 @@ header {
     height: 200px;
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 80% 1fr;
+    grid-template-columns: 1fr 70% 1fr;
     grid-template-rows: 100px 60px;
     align-items: center;
     grid-template-areas:
@@ -23,6 +23,7 @@ header {
     grid-area: logo;
     height: 100px;
     width: 100%;
+    justify-self: center;
 }
 
 #logo-pic {
@@ -32,16 +33,17 @@ header {
 
 #left-fill {
     grid-area: left;
-    background-color: aqua;
     height: 100%;
     width: 100%;
 }
 
 #right-fill {
     grid-area: right;
-    background-color: aqua;
     height: 100%;
     width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
 }
 
 nav {
@@ -93,4 +95,21 @@ button {
 
 #dropdown-btn:hover{
     opacity: 50%;
+}
+
+.black {
+    background-color: black;
+    height: 500px;
+    width: 500px;
+}
+
+.cart {
+    border: 1px solid gray;
+    height: 50px;
+    width: 50px;
+}
+
+#shopping-bag {
+    content: url('https://api.iconify.design/ant-design/shopping-outlined.svg?height=50');
+    grid-area: 2 / 4 / 3 / 5;
 }
