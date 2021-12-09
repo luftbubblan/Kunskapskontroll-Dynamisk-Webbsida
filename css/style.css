@@ -7,15 +7,15 @@ h1, h2, h3, h4, h5 {
 }
 
 header {
-    height: 200px;
+    height: 160px;
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 70% 1fr;
+    grid-template-columns: 1fr 1fr 20% 1fr 1fr;
     grid-template-rows: 100px 60px;
     align-items: center;
     grid-template-areas:
-    "left logo right"
-    "nav nav nav"
+    "left logo logo logo right"
+    "left-nav nav nav nav right-nav";
 }
 
 #logo-link {
@@ -53,6 +53,7 @@ nav {
     justify-content: center;
     align-items: center;
 }
+
 
 button {
     border: none;
@@ -119,8 +120,45 @@ button {
     opacity: 50%;
 }
 
+#left-nav {
+    grid-area: left-nav;
+    background-color: rgb(231, 229, 229);
+    height: 60px;
+    width: 100%;
+}
+
+#right-nav {
+    grid-area: right-nav;
+    background-color: rgb(231, 229, 229);
+    display: flex;
+    height: 60px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+#right-nav input[type=text] {
+    border: none;
+    height: 25px;
+    width: 200px;
+    font-size: 16px;
+    padding: 6px;
+    border: none;
+    background-color: transparent;
+    color: black;
+    border-bottom: 2px solid rgb(87, 18, 14);
+}
+
+#right-nav input[type=text]:focus {
+    outline: none;
+}
+
+#search-icon {
+    height: 25px;
+}
+
 #shopping-bag {
-    grid-area: 3 / 3 / 4 / 4;
+    grid-area: 3 / 4 / 4 / 5;
     width: 35px;
 }
 
