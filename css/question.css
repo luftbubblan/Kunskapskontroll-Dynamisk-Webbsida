@@ -7,10 +7,8 @@ h1, h2, h3, h4, h5 {
 }
 
 main {
-    height: 800px;
     width: 80%;
     margin: 0 auto;
-
 }
 
 form {
@@ -18,7 +16,6 @@ form {
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: 80px 80px 200px 80px 80px;
     align-items: center;
-
 }
 
 .form-box {
@@ -27,6 +24,7 @@ form {
     width: 80%;
     margin: 10px 0;
     padding: 10px;
+    font-size: 14px;
 }
 
 #firstname {
@@ -43,6 +41,7 @@ form {
 
 #question {
     grid-area: 3/1/4/5;
+    align-self: flex-end;
 }
 
 h3 {
@@ -62,7 +61,6 @@ p {
     grid-area: 4/1/5/3;
     margin: 0;
     align-self: start;
-    color: red;
     font-weight: bold;
 }
 
@@ -74,25 +72,20 @@ input[type="submit"] {
     font-size: medium;
     border: 1px solid #333;
     border-radius: 3px;
-    align-self: end;
 }
 
 #contact-picture {
     grid-area: 2/5/6/9;
-    background-color: rgb(87, 18, 14);
     height: 75%;
     width: 100%;
 }
 
-div {
+main div {
     display: flex;
     flex-flow: column;
 }
-
-label {
-    color: red;
-}
-
-label[for=lastname] {
-    color: black;
+#contact-picture img {
+    height: 100%;
+    border-radius: 50px;
+    box-shadow: 0px 0px 10px 10px lightgray;
 }
