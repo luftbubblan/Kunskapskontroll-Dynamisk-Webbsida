@@ -1,94 +1,75 @@
 body {
-    font-family: Raleway, sans-serif;
-    }
-    
+font-family: Raleway, sans-serif;
+margin: 0;
+}
+
 h1, h2, h3, h4, h5 {
     font-family: Sorts Mill Goudy, serif;
 }
 
 main {
-    width: 40%;
+    width: 80%;
     margin: 0 auto;
 }
 
 form {
-    /* display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: 80px 80px 200px 80px 80px;
-    align-items: center; */
+    max-width: 900px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-content: space-between;
-    gap: 20px 100px;
+    justify-content: space-between;
+    row-gap: 20px;
+    margin: 0 auto;
 }
 
-#top-part {
+main div {
+display: flex;
+flex-flow: column;
+}
+
+.top-text {
     width: 100%;
     text-align: center;
-    margin: 40px 0 10px 0;
 }
 
-.form-box {
+#ask-us {
+    margin-top: 40px;
+}
+
+#send-us {
+    margin-bottom: 20px;
+}
+
+.short-box {
+    max-width: 300px;
+    min-width: 100px;
+    flex-basis: 45%;
+}
+
+.text-field {
     border: 1px solid #333;
-    border-radius: 10px;
-    /* width: 80%; */
     margin: 10px 0;
     padding: 10px;
     font-size: 14px;
 }
 
-#firstname {
-    width: 400px;
-    /* grid-area: 1/1/2/3; */
+#question-box {
+    max-width: 900px;
+    min-width: 100px;
+    flex-basis: 100%;
 }
 
-/* #lastname {
-    grid-area: 1/4/2/6;
-} */
-
-#e-mail {
-    width: 400px;
-    /* grid-area: 1/4/2/6; */
-}
-
-#question {
-    /* grid-area: 3/1/4/5; */
-    width: 900px;
-    align-self: flex-end;
-}
-
-h3 {
-    margin-top: 0;
-    margin-bottom: 10px;
-}
-
-#question-text {
-    /* width: 87%; */
-    border-radius: 10px;
+#question-field {
     border: 1px solid #333;
     resize: none;
     font-size: 16px;
-}
-
-p {
-    /* grid-area: 4/1/5/3; */
-    margin: 0;
-    align-self: start;
-    font-weight: bold;
+    margin-top: 10px;
 }
 
 input[type="submit"] {
-    /* grid-area: 4/1/5/2; */
     background-color: rgb(231, 229, 229);
     width: 80px;
     height: 30px;
     font-size: medium;
     border: 1px solid #333;
-    border-radius: 3px;
-}
-
-main div {
-    display: flex;
-    flex-flow: column;
+    margin: 0 auto;
 }

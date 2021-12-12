@@ -65,32 +65,27 @@
     
     <main>
         <form action="" method="get">
-            <h1 id="top-part">Ask a Question</h1>
+            <h1 id="ask-us" class="top-text">Ask us a Question</h1>
+            <section id="send-us" class="top-text">Send us a quesion and we’ll get back to you usualy within 24  hours.</section>
 
-            <div id="firstname">
-                <label for="firstname">Name</label>
-                <input type="text" name="firstname" class="form-box" placeholder="Required" required>
+            <div class="short-box">
+                <label for="name">Name</label>
+                <input type="text" name="name" class="text-field" placeholder="Required" required>
             </div>
 
-            <!-- <div id="lastname">
-                <label for="lastname">Last name</label>
-                <input type="text" name="lastname" class="form-box">
-            </div> -->
-
-            <div id="e-mail">
+            <div class="short-box">
                 <label for="e-mail">E-mail</label>
-                <input type="email" name="e-mail" class="form-box" placeholder="Required" required>
+                <input type="email" name="e-mail" class="text-field" placeholder="Required" required>
             </div>
 
-            <div id="question">
-                <label for="question"><h3>What is your question?</h3></label>
-                <textarea name="question" id="question-text" rows="7" placeholder="Required. Please type your question here" required></textarea>
+            <div id="question-box">
+                <label for="question">What is your question?</label>
+                <textarea name="question" id="question-field" rows="7" placeholder="Please type your question here" required></textarea>
             </div>
 
             <input type="submit" value="Send">
-
         </form>
-
+        
 
 
 
