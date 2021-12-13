@@ -1,0 +1,82 @@
+.container {
+  
+        width: 100vw;
+        height: 100vh;
+        margin: 20px auto;
+        display: grid;
+        background-color: blueviolet;
+      
+        grid-template-columns: repeat(3, 1fr); /* 1fr 1fr */
+/*         grid-template-rows: 30;
+        row-gap: 30px;
+        column-gap: 40px;  */
+      }
+
+.container-left {
+
+    background-color: aquamarine;
+
+}
+.container-middle {
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+align-items: center;
+
+    background-color: rgb(35, 37, 37);
+
+}
+
+.search-icon {
+    height: 25px;
+}
+.gs-10productimage {
+    width: 60%;
+    height: 50%;
+  
+}
+.btn {
+    padding: 10px 60px;
+    border-radius: 20px;
+}
+
+.container-right {
+display: flex;
+/* align-items: center; */
+flex-direction: column; 
+justify-content: center;
+    background-color: rgb(99, 17, 88);
+/* padding: 20px; */
+
+}
+.box1 {
+    border: solid 1px;
+    background-color: rgb(22, 146, 53);
+    width: 90%;
+    height: 25%;
+    font-size: 14px;
+
+}
+
+.box2 {
+border: solid 1px;
+    background-color: rgb(180, 139, 175);
+    width: 90%;
+    height: 25%;
+    font-size: 14px;
+}
+.box3 {
+    border: solid 1px;
+    background-color: rgb(173, 145, 16);
+    width: 90%;
+    height: 25%;
+    font-size: 14px;
+}
+
+.box4 {
+    border: solid 1px;
+    background-color: rgb(87, 63, 196);
+    width: 90%;
+    height: 25%;
+}
+
