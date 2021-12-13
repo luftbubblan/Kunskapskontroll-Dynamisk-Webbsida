@@ -50,15 +50,29 @@ header {
 }
 
 nav {
-    background-color: var(--nav-background-color);
     grid-area: nav;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1;
+    background-color: var(--nav-background-color);
     height: 60px;
     width: 100%;
-    justify-content: center;
-    align-items: center;
+    column-gap: 30px;
+    grid-template-areas:
+    ". home brush about contact .";
 }
 
+nav button:first-child {
+    grid-area: home;
+}
+
+nav button:nth-child(3) {
+    grid-area: about;
+}
+
+nav button:last-child {
+    grid-area: contact;
+}
 
 button {
     border: none;
@@ -70,7 +84,7 @@ button {
     font-size: large;
     color: var(--nav-text-color);
     height: 60px;
-    width: 200px;
+    width: 150px;
 }
 
 #active {
@@ -94,10 +108,10 @@ button {
     color: var(--nav-text-color);
     height: 40px;
     width: 170px;
-    padding-left: 15px;
 }
 
 #dropdown {
+    grid-area: brush;
     position: relative;
     display: inline-block;
 }
@@ -106,8 +120,7 @@ button {
     display: none;
     position: absolute;
     z-index: 1;
-    width: 170px;
-    left: 15px;
+    width: 150px;
 }
 
 #dropdown:hover #dropdown-content {
