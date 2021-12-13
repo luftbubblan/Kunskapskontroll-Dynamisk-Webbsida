@@ -174,7 +174,7 @@ a {
 a:active {
     color: red;
 }
- .top-image img {
+ .top-image {
     display: flex;
     width: 89%;
     height: 250px;
@@ -182,6 +182,10 @@ a:active {
     justify-content: center;
     align-content: center;
 }
+
+#grid-container:hover .product-grid {
+    opacity: 0.3;
+  }
 
 .h1-center, .p-center {
     text-align: center;
