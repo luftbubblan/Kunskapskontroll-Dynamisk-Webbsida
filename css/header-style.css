@@ -1,3 +1,8 @@
+:root {
+    --nav-background-color: #d3d3d3;
+    --nav-text-color: black;
+}
+
 body {
     font-family: Raleway, sans-serif;
     }
@@ -45,15 +50,29 @@ header {
 }
 
 nav {
-    background-color: rgb(231, 229, 229);
     grid-area: nav;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1;
+    background-color: var(--nav-background-color);
     height: 60px;
     width: 100%;
-    justify-content: center;
-    align-items: center;
+    column-gap: 30px;
+    grid-template-areas:
+    ". home brush about contact .";
 }
 
+nav button:first-child {
+    grid-area: home;
+}
+
+nav button:nth-child(3) {
+    grid-area: about;
+}
+
+nav button:last-child {
+    grid-area: contact;
+}
 
 button {
     border: none;
@@ -61,11 +80,20 @@ button {
 }
 
 .nav-btn {
-    background-color: rgb(231, 229, 229);
+    font-family: Raleway, sans-serif;
+    font-weight: bold;
+    background-color: var(--nav-background-color);
     font-size: large;
-    color: rgb(87, 18, 14);
+    color: var(--nav-text-color);
     height: 60px;
-    width: 200px;
+    width: 150px;
+}
+
+#active {
+    opacity: 100%;
+    border-bottom: 2px solid var(--nav-text-color);
+    margin-top: 2px;
+    height: 58px;
 }
 
 .nav-btn:hover {
@@ -77,15 +105,17 @@ button {
 }
 
 .dropdown-btn {
-    background-color: rgb(231, 229, 229);
+    font-family: Raleway, sans-serif;
+    font-weight: bold;
+    background-color: var(--nav-background-color);
     font-size: large;
-    color: rgb(87, 18, 14);
+    color: var(--nav-text-color);
     height: 40px;
     width: 170px;
-    padding-left: 15px;
 }
 
 #dropdown {
+    grid-area: brush;
     position: relative;
     display: inline-block;
 }
@@ -95,12 +125,11 @@ button {
     position: absolute;
     z-index: 1;
     width: 170px;
-    left: 15px;
 }
 
 #dropdown:hover #dropdown-content {
     display: block;
-    background-color: rgb(231, 229, 229);
+    background-color: var(--nav-background-color);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     box-shadow: 10px 10px 5px grey;
@@ -122,14 +151,14 @@ button {
 
 #left-nav {
     grid-area: left-nav;
-    background-color: rgb(231, 229, 229);
+    background-color: var(--nav-background-color);
     height: 60px;
     width: 100%;
 }
 
 #right-nav {
     grid-area: right-nav;
-    background-color: rgb(231, 229, 229);
+    background-color: var(--nav-background-color);
     display: flex;
     height: 60px;
     width: 100%;
@@ -145,8 +174,8 @@ button {
     padding: 6px;
     border: none;
     background-color: transparent;
-    color: black;
-    border-bottom: 2px solid rgb(87, 18, 14);
+    color: var(--nav-text-color);
+    border-bottom: 2px solid var(--nav-text-color);
 }
 
 #right-nav input[type=text]:focus {
@@ -166,11 +195,92 @@ button {
     cursor: pointer;
 }
 
-a {
-    color: rgb(87, 18, 14);
+button a {
+    color: var(--nav-text-color);
     text-decoration: none;
 }
 
-a:active {
-    color: red;
+#portrait-content {
+    display: none;
+}
+
+
+@media screen and (orientation: portrait) {
+#portrait-content {
+    display: flex;
+    align-items: center;
+    column-gap: 10vw;
+}
+
+#landscape-content {
+    display: none;
+}
+
+#logo {
+    width: 40vw;
+    margin-right: 15vw;
+}
+
+#shopp {
+    width: 10vw;
+}
+
+#menu {
+    width: 10vw;
+}
+
+#menu-btn {
+    padding: 0;
+    background-color: white;
+}
+
+#menu-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    height: auto;
+    width: 80vw;
+    background-color: var(--nav-background-color);
+    row-gap: 1vw;
+}
+
+#drop:hover #menu-content {
+    display: flex;
+    flex-flow: column nowrap;
+    position: absolute;
+    left: 20vw;
+    border-top-left-radius: 3vw;
+    border-bottom-left-radius: 3vw;
+    box-shadow: 0 2vw 2vw grey;
+}
+
+.drop-btn {
+    font-family: Raleway, sans-serif;
+    font-weight: bold;
+    font-size: 7vw;
+    margin: 0 auto;
+}
+
+#menu-content a:first-child {
+    border-top-left-radius: 3vw;
+    margin-top: 2vw;
+}
+
+#menu-content a:last-child {
+    border-bottom-left-radius: 3vw;
+    margin-bottom: 2vw;
+}
+
+.drop-btn:last-child {
+    border-bottom-left-radius: 3vw;
+}
+
+#menu-content a {
+    background-color: #efefef;
+    font-size: 7vw;
+    margin: 0 0 0 2vw;
+    display: flex;
+    align-content: center;
+    text-decoration: none;
+}
 }
