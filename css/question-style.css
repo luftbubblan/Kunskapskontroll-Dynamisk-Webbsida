@@ -1,3 +1,6 @@
+@import "footer-style.css";
+@import "header-style.css";
+
 body {
     font-family: Raleway, sans-serif;
     margin: 0;
@@ -9,6 +12,7 @@ h1, h2, h3, h4, h5 {
 
 main {
     width: 80%;
+    min-height: 80vh;
     margin: 0 auto;
 }
 
@@ -72,4 +76,5 @@ input[type="submit"] {
     font-size: medium;
     border: 1px solid #333;
     margin: 0 auto;
+    margin-bottom: 40px;
 }
