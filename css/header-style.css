@@ -49,7 +49,7 @@ header {
     grid-template-rows: repeat(4, 1fr);
 }
 
-nav {
+#nav {
     grid-area: nav;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -62,19 +62,24 @@ nav {
     ". home brush about contact .";
 }
 
-nav button:first-child {
+#nav button:first-child {
     grid-area: home;
 }
 
-nav button:nth-child(3) {
+#nav button:nth-child(3) {
     grid-area: about;
 }
 
-nav button:last-child {
+#nav button:last-child {
     grid-area: contact;
 }
 
-button {
+header button {
+    border: none;
+    cursor: pointer;
+}
+
+#header2 button {
     border: none;
     cursor: pointer;
 }
@@ -133,6 +138,7 @@ button {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     box-shadow: 10px 10px 5px grey;
+    margin-left: -10px;
 }
 
 .dropdown-btn:first-child{
@@ -195,7 +201,7 @@ button {
     cursor: pointer;
 }
 
-button a {
+header button a {
     color: var(--nav-text-color);
     text-decoration: none;
 }
