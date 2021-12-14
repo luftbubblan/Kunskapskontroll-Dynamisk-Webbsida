@@ -206,6 +206,7 @@ a:active {
 
 #grid-despription {
     text-align: center;
+    padding: 50px;
 }
 
 #grid-container {
@@ -232,3 +233,7 @@ a:active {
     font-size: 16px;
     padding: 12px 15px;
     border-radius: 50px;
+}
+.p-price {
+    font-weight: bold;
+}
