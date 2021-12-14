@@ -298,14 +298,6 @@ header button a {
     background-repeat: no-repeat;
     margin:auto;}
 
- /* .top-img {
-    display: flex;
-    width: 100%;
-    height: 350px;
-    flex-direction: row;
-    justify-content: center;
-} */
-
  .product-grid:hover {
     opacity: 0.3;
   }
@@ -329,20 +321,21 @@ header button a {
 }
 
 .product-grid img {
+    position: relative;
     padding: 20px 20px;
-    justify-content: center;
-    align-items: center;
     width: 350px;
     height: 350px;
 
 }
 .product-grid .btn {   
+    position: absolute;
     background-color: rgb(190, 188, 188);
     color: white;
     font-size: 16px;
     padding: 12px 15px;
     border-radius: 50px;
 }
+
 .p-price {
     font-weight: bold;
 }
