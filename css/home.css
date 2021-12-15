@@ -27,6 +27,13 @@ h1 {
 
 .h1-center, .p-center {
     text-align: center;
+    width: 40%;
+    margin: auto;
+    background-color: #fcdad0;
+    box-shadow: 5px 5px 20px 20px #fcdad0, -5px -5px 5px 5px #fcdad0;
+    /* backdrop-filter: blur(30px); */
+    padding: 15px;
+    border-radius: 10px;
 }
 
 .h1-center {
