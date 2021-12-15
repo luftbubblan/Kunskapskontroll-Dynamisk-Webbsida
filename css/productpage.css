@@ -56,7 +56,7 @@ display: grid;
    padding-left: 20px;
    padding-right: 20px;
    padding-top: 20px;
-   padding-bottom: 20px; */
+   padding-bottom: 20px; 
 
 
 }
@@ -94,18 +94,19 @@ align-items: center;
 
 
 .gs-10productimage {
-    diplay: flex;
+    display: flex;
     width: 60%;
     height: 40%;
   
 }
 .btn {
-    diplay: flex;
+    display: flex;
     padding: 10px 60px;
     border-radius: 20px;
-    font: rgb(252, 251, 251)
+    font: rgb(252, 251, 251);
     font-family: "Sorts Mill Goudy"; 
-    font-size: 14px font-style: normal; 
+    font-size: 14px;
+    font-style: normal; 
     font-variant: normal; 
     font-weight: 700; 
     line-height: 15.4px; 
