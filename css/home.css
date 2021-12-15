@@ -22,7 +22,7 @@ h1 {
 }
 
  .product-grid img:hover {
-    opacity: 0.3;
+    cursor: pointer;
   }
 
 .h1-center, .p-center {
@@ -48,10 +48,12 @@ h1 {
 
 .product-grid img {
     position: relative;
-    padding: 20px 20px;
-    width: 350px;
+    width: 200px;
     height: 350px;
+    object-fit:cover;
+    margin: 0 80px;
     margin-top: 150px;
+
 
 }
 .product-grid .btn {   
