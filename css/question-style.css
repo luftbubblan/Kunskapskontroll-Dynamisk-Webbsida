@@ -78,3 +78,28 @@ input[type="submit"] {
     margin: 0 auto;
     margin-bottom: 40px;
 }
+
+
+@media screen and (min-width: 400px) and (orientation: portrait) {
+    body {
+        font-size: 30px;
+    }
+    
+    h1 {
+        font-size: 60px;
+    }
+    
+    .text-field {
+        font-size: 24px;
+    }
+
+    #question-field {
+        font-size: 26px;
+    }
+
+    input[type="submit"] {
+        width: 180px;
+        height: 60px;
+        font-size: 26px;
+    }
+}
