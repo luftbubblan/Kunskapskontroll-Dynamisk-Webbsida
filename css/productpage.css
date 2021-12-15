@@ -1,4 +1,13 @@
 @import "header-style.css";
+@import "footer-style.css";
+body {
+    font-family: Raleway, sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: Sorts Mill Goudy, serif;
+}
+
 
 
 
@@ -16,7 +25,7 @@
         column-gap: 40px;  */
       }
 
-.h2 { 
+/* .h2 { 
         font-family: "Sorts Mill Goudy"; 
         font-size: 16px; font-style: normal; 
         font-variant: normal; 
@@ -38,7 +47,7 @@ font-variant: normal;
 font-weight: 400; 
 line-height: 20px;  
 
-}
+} */
 
 #container-left {
 display: grid;
@@ -104,12 +113,12 @@ align-items: center;
     padding: 10px 60px;
     border-radius: 20px;
     font: rgb(252, 251, 251);
-    font-family: "Sorts Mill Goudy"; 
+   /*  font-family: "Sorts Mill Goudy"; 
     font-size: 14px;
     font-style: normal; 
     font-variant: normal; 
     font-weight: 700; 
-    line-height: 15.4px; 
+    line-height: 15.4px;  */
 
 }
 
@@ -158,6 +167,7 @@ justify-content: center;
     width: 90%;
     height: 25%;
     margin-bottom: 5%
+    
     
 
    
