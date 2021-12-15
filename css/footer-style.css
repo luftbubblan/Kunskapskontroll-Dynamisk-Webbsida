@@ -1,4 +1,4 @@
-#container {
+#footer-container {
     height: auto;
     width: 100%;
     display: grid;
@@ -86,7 +86,7 @@ footer a {
 
 
 @media screen and (orientation: portrait) {
-    #container {
+    #footer-container {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto auto auto;
     }
@@ -134,7 +134,7 @@ footer a {
 
 
 @media screen and (min-width: 400px) and (orientation: portrait) {
-    #container {
+    #footer-container {
         grid-template-columns: 1fr 15% 15% 15% 1fr ;
     }
 
