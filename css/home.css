@@ -1,4 +1,5 @@
 @import "header-style.css"; 
+@import "footer-style.css";
 
 body , .btn{
     font-family: Raleway, sans-serif;
