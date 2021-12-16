@@ -237,49 +237,50 @@ header button a {
     display: none;
     position: absolute;
     z-index: 1;
-    height: auto;
-    width: 60vw;
+    height: 30vw;
+    width: 80vw;
     background-color: var(--nav-background-color);
-    row-gap: 1vw;
+    column-gap: 3%;    
 }
 
 #drop:hover #menu-content {
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: row;
+    flex-wrap: wrap;
     position: absolute;
-    left: 40vw;
-    border-top-left-radius: 3vw;
-    border-bottom-left-radius: 3vw;
-    box-shadow: 0 2vw 2vw grey, -2vw 0 2vw grey, 1vw 2vw 2vw grey;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    top: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 5vw;
+    padding: 0;
+    box-shadow: 2vw 2vw 2vw grey, 0 2vw 2vw grey, 2vw 0 2vw grey;
 }
 
 .drop-btn {
     font-family: Raleway, sans-serif;
     font-weight: bold;
-    font-size: 7vw;
-    margin: 0 auto;
+    font-size: 5vw;
+    border-radius: 5vw;
+    text-align: center;
+    padding: 0 auto;
+    width: 100%;
 }
 
-#menu-content a:first-child {
-    border-top-left-radius: 3vw;
-    margin-top: 2vw;
-}
 
-#menu-content a:last-child {
-    border-bottom-left-radius: 3vw;
-    margin-bottom: 2vw;
-}
-
-.drop-btn:last-child {
-    border-bottom-left-radius: 3vw;
-}
 
 #menu-content a {
     background-color: #efefef;
-    margin: 0 0 0 2vw;
     display: flex;
     align-content: center;
     text-decoration: none;
+
+    margin: 0;
+    border-radius: 5vw;
+    height: 40%;
+    width: 45%;
 }
 }
 
