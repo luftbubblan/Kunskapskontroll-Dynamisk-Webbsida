@@ -204,81 +204,118 @@ header button a {
 
 
 @media screen and (orientation: portrait) {
-    #portrait-content {
-        display: flex;
-        align-items: center;
-        column-gap: 10vw;
-    }
+#portrait-content {
+    display: flex;
+    align-items: center;
+    column-gap: 10vw;
+}
+
+#landscape-content {
+    display: none;
+}
+
+#logo {
+    width: 40vw;
+    margin-right: 15vw;
+}
+
+#shopp {
+    width: 10vw;
+}
+
+#menu {
+    width: 10vw;
+}
+
+#menu-btn {
+    padding: 0;
+    background-color: white;
+}
+
+#menu-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    height: auto;
+    width: 60vw;
+    background-color: var(--nav-background-color);
+    row-gap: 1vw;
+}
+
+#drop:hover #menu-content {
+    display: flex;
+    flex-flow: column nowrap;
+    position: absolute;
+    left: 40vw;
+    border-top-left-radius: 3vw;
+    border-bottom-left-radius: 3vw;
+    box-shadow: 0 2vw 2vw grey;
+}
+
+.drop-btn {
+    font-family: Raleway, sans-serif;
+    font-weight: bold;
+    font-size: 7vw;
+    margin: 0 auto;
+}
+
+#menu-content a:first-child {
+    border-top-left-radius: 3vw;
+    margin-top: 1vw;
+}
+
+#menu-content a:last-child {
+    border-bottom-left-radius: 3vw;
+    margin-bottom: 1vw;
+}
+
+.drop-btn:last-child {
+    border-bottom-left-radius: 3vw;
+}
+
+#menu-content a {
+    background-color: #efefef;
+    font-size: 7vw;
+    margin: 0 0 0 1vw;
+    display: flex;
+    align-content: center;
+    text-decoration: none;
+}
+}
+
+
+@media screen and (min-width: 400px) and (orientation: portrait) {   
+#portrait-content {
+    column-gap: 5vw;
+}
+
+#logo {
+    width: 30vw;
+    margin-left: 2vw;
+    margin-right: 40vw;
+}
+
+#shopp {
+    width: 6vw;
+}
+
+#menu {
+    width: 7vw;
+}
+
+#menu-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    height: auto;
+    width: 40vw;
+}
+
+#drop:hover #menu-content {
+    left: 60vw;
+}
     
-    #landscape-content {
-        display: none;
-    }
-    
-    #logo {
-        width: 40vw;
-        margin-right: 15vw;
-    }
-    
-    #shopp {
-        width: 10vw;
-    }
-    
-    #menu {
-        width: 10vw;
-    }
-    
-    #menu-btn {
-        padding: 0;
-        background-color: white;
-    }
-    
-    #menu-content {
-        display: none;
-        position: absolute;
-        z-index: 1;
-        height: auto;
-        width: 80vw;
-        background-color: var(--nav-background-color);
-        row-gap: 1vw;
-    }
-    
-    #drop:hover #menu-content {
-        display: flex;
-        flex-flow: column nowrap;
-        position: absolute;
-        left: 20vw;
-        border-top-left-radius: 3vw;
-        border-bottom-left-radius: 3vw;
-        box-shadow: 0 2vw 2vw grey;
-    }
-    
-    .drop-btn {
-        font-family: Raleway, sans-serif;
-        font-weight: bold;
-        font-size: 7vw;
-        margin: 0 auto;
-    }
-    
-    #menu-content a:first-child {
-        border-top-left-radius: 3vw;
-        margin-top: 2vw;
-    }
-    
-    #menu-content a:last-child {
-        border-bottom-left-radius: 3vw;
-        margin-bottom: 2vw;
-    }
-    
-    .drop-btn:last-child {
-        border-bottom-left-radius: 3vw;
-    }
-    
-    #menu-content a {
-        background-color: #efefef;
-        font-size: 7vw;
-        margin: 0 0 0 2vw;
-        display: flex;
-        align-content: center;
-        text-decoration: none;
-    }
-    }
+.drop-btn {
+    font-size: 5vw;
+}
+}
