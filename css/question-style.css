@@ -106,7 +106,9 @@ input[type="submit"]:hover {
 
     input[type="submit"] {
         width: 180px;
-        height: 60px;
-        font-size: 26px;
+        height: 66px;
+        font-size: 30px;
+        border-radius: 33px;
+        margin-top: 15px;
     }
 }
