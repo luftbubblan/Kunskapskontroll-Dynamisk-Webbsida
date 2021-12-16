@@ -285,53 +285,6 @@ header button a {
 
 
 @media screen and (min-width: 400px) and (orientation: portrait) {   
-/* #portrait-content {
-    column-gap: 5vw;
-}
-
-#logo {
-    width: 30vw;
-    margin-left: 2vw;
-    margin-right: 40vw;
-}
-
-#shopp {
-    width: 6vw;
-}
-
-#menu {
-    width: 7vw;
-}
-
-#menu-content {
-    display: none;
-    position: absolute;
-    z-index: 1;
-    height: auto;
-    width: 40vw;
-}
-
-#drop:hover #menu-content {
-    left: 60vw;
-}
-    
-.drop-btn {
-    font-size: 5vw;
-}
-
-#menu-content a:first-child {
-    margin-top: 1vw;
-}
-
-#menu-content a:last-child {
-    margin-bottom: 1vw;
-}
-
-#menu-content a {
-    margin: 0 0 0 1vw;
-} */
-
-
 #portrait-content {
     column-gap: 5vw;
 }
@@ -357,21 +310,10 @@ header button a {
 
 #menu-content {
     display: none;
-    /* display: flex; */
     position: absolute;
     z-index: 1;
-    height: 120px;
+    height: 12vw;
     width: 85vw;
-    /* column-gap: 1vw; */
-
-    /* REMOVE LATER */
-    /* justify-content: center;
-    left: 0;
-    top: 0;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 5vw;
-    padding: 0; */
 }
 
 #drop:hover #menu-content {
