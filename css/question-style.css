@@ -26,8 +26,8 @@ form {
 }
 
 main div {
-display: flex;
-flex-flow: column;
+    display: flex;
+    flex-flow: column;
 }
 
 .top-text {
@@ -70,13 +70,20 @@ flex-flow: column;
 }
 
 input[type="submit"] {
-    background-color: rgb(231, 229, 229);
-    width: 80px;
-    height: 30px;
+    background-color: rgb(190, 188, 188);
+    color: white;
+    width: 90px;
+    height: 36px;
     font-size: medium;
-    border: 1px solid #333;
+    border: none;
     margin: 0 auto;
     margin-bottom: 40px;
+    border-radius: 18px;
+}
+
+input[type="submit"]:hover {
+    background-color: maroon;
+    opacity: 0.5;
 }
 
 
