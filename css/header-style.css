@@ -207,7 +207,7 @@ header button a {
 #portrait-content {
     display: flex;
     align-items: center;
-    column-gap: 10vw;
+    justify-content: space-between;
 }
 
 #landscape-content {
@@ -216,7 +216,11 @@ header button a {
 
 #logo {
     width: 40vw;
-    margin-right: 15vw;
+    margin-right: 10vw;
+}
+
+#search {
+    width: 10vw;
 }
 
 #shopp {
@@ -225,6 +229,7 @@ header button a {
 
 #menu {
     width: 10vw;
+    margin-right: 5vw;
 }
 
 #menu-btn {
@@ -285,14 +290,14 @@ header button a {
 
 
 @media screen and (min-width: 400px) and (orientation: portrait) {   
-#portrait-content {
-    column-gap: 5vw;
-}
-
 #logo {
     width: 30vw;
     margin-left: 2vw;
-    margin-right: 40vw;
+    margin-right: 30vw;
+}
+
+#search {
+    width: 6vw;
 }
 
 #shopp {
@@ -301,6 +306,7 @@ header button a {
 
 #menu {
     width: 7vw;
+    margin-right: 4vw;
 }
 
 #menu-content {
