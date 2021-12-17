@@ -250,7 +250,6 @@ header button a {
 #drop:hover #menu-content {
     display: flex;
     flex-flow: column nowrap;
-    position: absolute;
     left: 40vw;
     border-top-left-radius: 3vw;
     border-bottom-left-radius: 3vw;
@@ -311,7 +310,6 @@ header button a {
 
 #menu-content {
     display: none;
-    position: absolute;
     z-index: 1;
     height: auto;
     width: 40vw;
