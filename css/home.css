@@ -1,6 +1,10 @@
 @import "header-style.css"; 
 @import "footer-style.css";
 
+body {
+    margin: 0px;
+}
+
 body , .btn{
     font-family: Raleway, sans-serif;
     }
@@ -82,4 +86,10 @@ h1 {
 
 main {
     margin-bottom: 100px;
+}
+
+@media screen and (max-width:420px) {
+    .p-center {
+        display: none;
+    }
 }
