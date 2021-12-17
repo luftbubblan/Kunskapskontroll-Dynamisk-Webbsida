@@ -3,7 +3,7 @@
     --nav-text-color: black;
 }
 
-header {
+#landscape-content {
     height: 160px;
     width: 100%;
     display: grid;
@@ -13,6 +13,10 @@ header {
     grid-template-areas:
     "left logo logo logo right"
     "left-nav nav nav nav right-nav";
+}
+
+#portrait-content {
+    display: none;
 }
 
 #logo-link {
@@ -67,11 +71,6 @@ header {
 }
 
 header button {
-    border: none;
-    cursor: pointer;
-}
-
-#header2 button {
     border: none;
     cursor: pointer;
 }
@@ -198,16 +197,12 @@ header button a {
     text-decoration: none;
 }
 
-#portrait-content {
-    display: none;
-}
-
 
 @media screen and (orientation: portrait) {
 #portrait-content {
     display: flex;
     align-items: center;
-    column-gap: 10vw;
+    justify-content: space-between;
 }
 
 #landscape-content {
@@ -216,7 +211,11 @@ header button a {
 
 #logo {
     width: 40vw;
-    margin-right: 15vw;
+    margin-right: 10vw;
+}
+
+#search {
+    width: 10vw;
 }
 
 #shopp {
@@ -225,6 +224,7 @@ header button a {
 
 #menu {
     width: 10vw;
+    margin-right: 5vw;
 }
 
 #menu-btn {
@@ -237,7 +237,7 @@ header button a {
     position: absolute;
     z-index: 1;
     height: auto;
-    width: 80vw;
+    width: 60vw;
     background-color: var(--nav-background-color);
     row-gap: 1vw;
 }
@@ -245,8 +245,7 @@ header button a {
 #drop:hover #menu-content {
     display: flex;
     flex-flow: column nowrap;
-    position: absolute;
-    left: 20vw;
+    left: 40vw;
     border-top-left-radius: 3vw;
     border-bottom-left-radius: 3vw;
     box-shadow: 0 2vw 2vw grey;
@@ -261,12 +260,12 @@ header button a {
 
 #menu-content a:first-child {
     border-top-left-radius: 3vw;
-    margin-top: 2vw;
+    margin-top: 1vw;
 }
 
 #menu-content a:last-child {
     border-bottom-left-radius: 3vw;
-    margin-bottom: 2vw;
+    margin-bottom: 1vw;
 }
 
 .drop-btn:last-child {
@@ -276,9 +275,46 @@ header button a {
 #menu-content a {
     background-color: #efefef;
     font-size: 7vw;
-    margin: 0 0 0 2vw;
+    margin: 0 0 0 1vw;
     display: flex;
     align-content: center;
     text-decoration: none;
+}
+}
+
+
+@media screen and (min-width: 400px) and (orientation: portrait) {   
+#logo {
+    width: 30vw;
+    margin-left: 2vw;
+    margin-right: 30vw;
+}
+
+#search {
+    width: 6vw;
+}
+
+#shopp {
+    width: 6vw;
+}
+
+#menu {
+    width: 7vw;
+    margin-right: 4vw;
+}
+
+#menu-content {
+    display: none;
+    z-index: 1;
+    height: auto;
+    width: 40vw;
+}
+
+#drop:hover #menu-content {
+    left: 60vw;
+}
+    
+.drop-btn {
+    font-size: 5vw;
 }
 }
