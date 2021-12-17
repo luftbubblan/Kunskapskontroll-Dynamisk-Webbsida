@@ -177,7 +177,7 @@ align-items: center;
 
 .gs-10productimage {
     display: flex;
-    width: 40%;
+    /* width: 40%; */
     height: 50%;
   
 }
@@ -200,7 +200,7 @@ align-items: center;
 .container-right {
     grid-area: 1 1 -1 -1;
     width: auto;
-    /* flex-direction: column; */
+    flex-direction: column;
  
 
 }
@@ -254,7 +254,7 @@ align-items: center;
     justify-content: center;
     padding: 0 10px;
     align-items: center;
-    flex-direction: column ;
+   /*  flex-direction: column; */
    /*  margin-right: 100px; */
 
 }
@@ -349,6 +349,7 @@ align-items: center;
     height: 90%;
    margin-top: 50px;
    margin-bottom: 40px;
+   padding-left: 50px;
 }
  .box3 img {
     width: 200px;
