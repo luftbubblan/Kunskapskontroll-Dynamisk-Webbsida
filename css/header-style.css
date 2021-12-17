@@ -3,7 +3,7 @@
     --nav-text-color: black;
 }
 
-header {
+#landscape-content {
     height: 160px;
     width: 100%;
     display: grid;
@@ -13,6 +13,10 @@ header {
     grid-template-areas:
     "left logo logo logo right"
     "left-nav nav nav nav right-nav";
+}
+
+#portrait-content {
+    display: none;
 }
 
 #logo-link {
@@ -67,11 +71,6 @@ header {
 }
 
 header button {
-    border: none;
-    cursor: pointer;
-}
-
-#header2 button {
     border: none;
     cursor: pointer;
 }
@@ -196,10 +195,6 @@ header button {
 header button a {
     color: var(--nav-text-color);
     text-decoration: none;
-}
-
-#portrait-content {
-    display: none;
 }
 
 
