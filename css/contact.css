@@ -1,13 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+@import "header-style.css";
+@import "footer-style.css";
+
 
 
 *{
     margin: 0px;
-    padding: 5px;
+    padding:0px;
     box-sizing: border-box;
 }
-
+ 
 body{
     background: #ffffff;
     font-family: 'Raleway', sans-serif;
@@ -53,7 +54,7 @@ body{
     margin-top: 5px;
 }
 
-img{
+.contact img{
     border-radius: 50%;
     position: relative;
     top: -45px;
